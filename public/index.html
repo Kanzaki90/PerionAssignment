@@ -1,0 +1,47 @@
+<head>
+
+    <title>Node.JS</title>
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/css/mdb.min.css" rel="stylesheet">
+
+
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/start/jquery-ui.min.css" rel="stylesheet">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+
+    <div class="form-group row">
+        <label for="search" class="col-sm-4 col-form-label pr-4" style="color: black">Search:</label>
+        <div class="col-sm-4">
+            <input type="text" id="search">
+        </div>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Value</th>
+                <th scope="col">Times Searched</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+
+
+</body>
+<script src="./js/script.js"></script>
+<script>
+    let input = document.querySelector('input');
+    let log = document.getElementById('log');
+    input.oninput = suffixSearchModule.suffixSearch;
+</script>
+
+</body>
