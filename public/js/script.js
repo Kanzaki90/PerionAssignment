@@ -8,18 +8,6 @@ var suffixSearchModule = (function() {
         const response = await fetch(url);
         const responseData = await response.json();
         _tableFiller(responseData);
-        // console.log(data);
-
-        // const xhttp = new XMLHttpRequest();
-        // xhttp.onreadystatechange = function() {
-        //     if (this.readyState == 4 && this.status == 200) {
-        //         response = JSON.parse(this.responseText);
-        //         _tableFiller(response);
-        //     }
-        // }
-        // xhttp.open("GET", url, true);
-        // xhttp.send();
-
     };
 
     function _tableFiller(response) {
